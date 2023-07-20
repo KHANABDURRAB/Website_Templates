@@ -1,0 +1,272 @@
+body {
+  margin: 0z;
+  padding: 0.5rem;
+  background-color: #A6ACAF;
+
+}
+
+/* Navigation Start*/
+nav {
+  height: 3rem;
+  border-radius: 18px;
+  padding: auto;
+  font-size: larger;
+  background-color: #2E4053;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+}
+
+.logo {
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  margin-left:0.8rem;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Navigation End*/
+
+/**************************************************************************/
+
+/* Banner Start*/
+.banner {
+  height: 38vh;
+  background-image: url("img/img8.png");
+  margin-top: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  animation: imageAnimation 15s infinite linear;
+}
+
+@keyframes imageAnimation {
+
+  0%,
+  100% {
+    left: 100%;
+  }
+
+  10%,
+  90% {
+    left: 0;
+  }
+}
+
+.banner img:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.banner img:nth-child(2) {
+  animation-delay: 5s;
+}
+
+.banner img:nth-child(3) {
+  animation-delay: 10s;
+}
+
+.banner img:nth-child(4) {
+  animation-delay: 15s;
+}
+
+.banner img:nth-child(5) {
+  animation-delay: 20s;
+}
+
+.banner img:nth-child(6) {
+  animation-delay: 25s;
+}
+
+/* Bannerr End*/
+
+/**************************************************************************/
+
+/* Cources Start */
+.cources {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.heading1 {
+  margin-top: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 1 0 calc(45% - 10px);
+  /* Each div takes one-third of the container width with 20px spacing */
+  background-color: #EBEDEF;
+  margin: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  height: 35rem;
+  border-radius: 20px;
+  font-size: larger;
+}
+
+.item :hover {
+  font-size: 1.4rem;
+  font-style: bold;
+}
+
+/* Media query for smaller devices */
+@media screen and (max-width: 768px) {
+  .item {
+    flex: 1 0 calc(100% - 10px);
+    /* Each div takes 100% width of the container width with 10px spacing */
+    height: auto;
+  }
+}
+
+.container .item a {
+  margin-top: 1rem;
+  display: inline-block;
+  /* Because a is inline element so,we have yo convert it into inline-block before styling*/
+  font-size: 2rem;
+  width: 12rem;
+  height: 2.5rem;
+  border-style: solid;
+  border-color: aqua;
+  border-radius: 25px;
+  box-sizing: square;
+  text-decoration: none;
+  background-color: rgb(186, 245, 225);
+}
+
+.container .item a:hover {
+  background-color: aqua;
+  border-color: black;
+}
+
+/* Cources End */
+
+/*************************************************************************/
+
+/* About us Start */
+.about {
+  font-size: larger;
+  font-style: bold;
+  border-radius: 18px;
+  margin-top: 0.5rem;
+  padding: 2rem;
+  height: auto;
+  background-color: #EBEDEF;
+  text-align: center;
+  overflow: hidden;
+}
+
+.heading {
+  margin-top: -1rem;
+}
+
+/* About us End */
+
+/***************************************************************************/
+/* Contact  Start */
+.contact {
+  margin-top: 0.5rem;
+  background-color: #f0f0f0;
+  padding: 1rem;
+  height: auto;
+  border-radius: 15px;
+}
+
+.container_contact {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact_item {
+  flex: 1 0 calc(45% - 10px);
+  /* Each div takes one-third of the container width with 20px spacing */
+  background-color: #EBEDEF;
+  margin: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  height: 25rem;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: black;
+}
+
+/* Media query for smaller devices */
+@media screen and (max-width: 768px) {
+  .contact_item {
+    flex: 1 0 calc(100% - 10px);
+    /* Each div takes 100% width of the container width with 10px spacing */
+    height: auto;
+  }
+}
+
+.addr {
+  height: 10rem;
+  border-style: solid;
+  border-color: black;
+  border-radius: 15px;
+  background-color: #EBEDEF;
+}
+
+.heading3 {}
+
+.mai {
+  color: Black;
+  font-size: x-large;
+  float: left;
+}
+
+.mai1 {
+  color: Black;
+  font-size: x-large;
+  float: left;
+  margin-left: 2rem;
+  ;
+}
+
+/* Contact End */
+
+/***************************************************************************/
+
+/* Footer Start */
+footer {
+  font-size: x-large;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Footer End */
